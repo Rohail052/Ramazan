@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --background: #eff2f9;
+    --foreground: #fff;
+    --primary: #6a74c9;
+    --text-black: #484848;
+    --text-gray: #4f4f4f;
+    --border: #e6e6e6;
+    --shadow: #b1b1b140;
+}
+
+.dark-theme-color {
+    --background: #0a112b;
+    --foreground: #161f3e;
+    --primary: #6a74c9;
+    --text-black: #d0d0d0;
+    --text-gray: #d0d0d0;
+    --border: #2e4080;
+    --shadow: #00000029;
+}
+
+body {
+    background: var(--background);
+}
+
+.container {
+    width: 95%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px;
+    background: linear-gradient(45deg, #00569a, transparent), url(bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    box-shadow: 1px 1px 4px var(--shadow);
+    position: relative;
+}
+
+.hero-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-wrapper .ramadan-text {
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.hero-wrapper .ramadan-text h1 {
+    color: #eff2f9;
+    text-transform: uppercase;
+    font-size: 40px;
+    line-height: 1.2;
+}
+
+.hero-wrapper .ramadan-text span {
+    color: #c8f1ff;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 10px;
+    background: #6a74c97d;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.hero-wrapper .ramadan-text p {
+    color: #e4f7ff;
+    font-size: 14px;
+    opacity: 0.7;
+}
+
+.ramadan-time {
+    background: var(--background);
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 4px #00000052;
+    margin: auto;
+}
+
+.ramadan-time h4 {
+    font-size: 20px;
+    color: var(--primary);
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.ramadan-time > div {
+    width: 100%;
+    padding: 10px;
+    background: var(--foreground);
+    border-radius: 10px;
+    margin-bottom: 10px;
+    border: 1px solid var(--border);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ramadan-time > div span {
+    color: var(--text-black);
+    text-align: center;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.ramadan-time > div span b {
+    font-size: 36px;
+    display: block;
+    margin-bottom: -5px;
+    color: var(--primary);
+}
+
+.ramadan-time > div p {
+    color: var(--text-gray);
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 12px;
+}
+
+.date-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.date-table {
+    background: var(--foreground);
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 1px 2px 7px var(--shadow);
+}
+
+.date-table h2 {
+    color: var(--primary);
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.date-table table {
+    width: 100%;
+    text-align: center;
+}
+
+.date-table table tr th {
+    background: var(--primary);
+    padding: 10px;
+    border-radius: 6px;
+    text-transform: uppercase;
+    border: 1px solid var(--border);
+    color: #fff;
+    font-size: 14px;
+}
+
+.date-table table tr td {
+    background: var(--background);
+    padding: 8px;
+    border-radius: 6px;
+    text-transform: capitalize;
+    border: 1px solid var(--border);
+    color: var(--text-black);
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.ramadan-dua {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.ramadan-dua ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.ramadan-dua ul li {
+    background: var(--foreground);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 1px 2px 7px var(--shadow);
+    text-align: center;
+}
+
+.ramadan-dua ul li h4 {
+    color: var(--primary);
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.ramadan-dua ul li p {
+    color: var(--text-gray);
+    margin-bottom: 10px;
+}
+
+.ramadan-dua ul li b {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: var(--text-black);
+}
+
+.ramadan-dua ul li hr {
+    border: none;
+    border-bottom: 2px solid var(--border);
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .hero-wrapper {
+        flex-direction: column;
+    }
+
+    .hero-wrapper .ramadan-text {
+        width: 100%;
+    }
+
+    .ramadan-time {
+        width: 100%;
+    }
+
+    .date-wrapper {
+        width: 100%;
+    }
+}
+
+
+
+
+.container2 {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+
+  .timer p {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  #countdown {
+    font-size: 24px;
+    color: #2d3748;
+  }
